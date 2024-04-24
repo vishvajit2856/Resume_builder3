@@ -1,182 +1,259 @@
-/* #colore1{
-  height: 300px;
-  width: 200px;
-  background-color: black;
-} */
-
-.bottom_bar
-{
-
-  position:fixed;
-  font-size: 20px;
-  height: 100px;
-  background-color: rgb(169, 240, 137);
-  margin-bottom: 30px;
-  width: 100%;
-  z-index: 9999;
-  bottom: 10px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template no1</title>
+  <link rel="stylesheet" href="user_info_resume.css">
+</head>
+<body>
 
 
-body{
-    background-color: rgb(255, 255, 255);
-  
-}
-.resume-form{
-  height: 1700px;
-
-}
-#designation{
-  text-transform: capitalize;
-}
-.main-board{
- display: flex;
-  background-color: rgb(194, 250, 241);
-  border:15px solid white;
-  margin:40px;
-  margin-top: 70px;
-  margin-left: 60px;
-  height: 400px;
-  position: absolute;
-  z-index: 3;
-  width: 1700px;
-}
-
-
-#text-tag{
-    text-align: left;
-    display: block;
-    margin-top: 60px;
-  margin-left: 20px;
-  margin-left: 190px;
-}
-
-#image-tag{
-    border-radius: 90%;
-    height: 250px;
-    width: 250px;
-    margin:  30px;
-    border: 6px solid rgb(255, 255, 255);
-   background-color: hsl(0, 0%, 100%);
-margin-left: 60px;
-
-}
-
-
-#fullname{
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-#gmail,#mobile-no,#address,#designation,#linkedin-profile-link,#gender{
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.skill-class
-{
- 
-   background-color: rgb(81, 81, 90);
-    height: 1000px;
-    width: 500px;
-    position: absolute;
-    z-index: 3;
-   padding-top: 550px;  
-   padding-left:100px ;
-   font-size: 40px;
-
-}
-#skill2{
-  text-transform: capitalize;
-}
-
-#skill-heading{
- font-size: 40px;
-margin-bottom: 20px;
-}
-
-#skill1,#skill2,#skill3,#skill4 {
-    margin-bottom: 20px;
-    color: rgb(226, 215, 215);
-    text-transform: capitalize;
-    font-size: 30px;
-}
-
-.education{
-    color: black;
-    background-color:white;
-  padding-top: 550px;
-
-}
-
-.remain-part{
-    position: absolute;
-}
-#Xth,#xiith{
-    padding-left: 700px;
-    font-size: 25px; 
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-
-#degree
-{
-    padding-left: 700px;
-    font-size: 25px; 
-  font-weight: bold;
    
-}
-#summary{
-    
-    padding-left: 700px;
-    font-size: 25px; 
-   margin-top: 0px;
-}
+  <div class="resume-form">
 
-#education-header{
-    font-size: 40px;
-   display:inline-table;
-  padding-bottom: 10px;
-  background-color: rgb(154, 189, 235);
-  margin-left: 700px;
- margin-bottom: 40px;
- padding-top: 5px;
+  <div class="skill-class">
+    <div id="skill-heading">
+      SKILLS
+    </div>
+    <div id="skill1">
+      1)painting
+    </div>
 
-}
+    <div id="skill2">
+      2)computative coding 
 
-#project-header{
-    font-size: 40px;
-   display:inline-table;
-  padding-bottom: 10px;
-  background-color: rgb(154, 189, 235);
-  margin-left: 700px;
- margin-bottom: 40px;
- padding-top: 5px;
-  position: absolute;
-margin-top: 20px;
+    </div>
+<div id="skill3">
+  3)leadership
+</div>
 
-}
-#project-name{
+<div id="skill4">
+  4)travlings
+</div>
+
+  </div>
+
+  <div class="main-board">
+
+   <div class="image-info">
+    <img id="image-tag" src="user-photo.png">  
+  </div>
+
+     
+    <div id="text-tag" class="text-info">
+
+      <div id="fullname">
+        vishvajit uttam kanase
+      </div>
+      
+      <div id="gmail">
+        Vishvajit@gmail.com
+      </div>
+      
+      <div id="mobile-no">
+        9370XXXXXX
+      </div>
+      
+      <div id="address" style="text-transform: capitalize;">
+        A/P satave dist kolhapur tal pahala
+      </div>
+      
+       <div id="designation" style="text-transform: capitalize;">
+        TY BTech student
+       </div>
+        
+       <div id="gender1" style="height: 30px; font-size: 30px;text-transform:capitalize;">
+        Male
+       </div>
+
+
+     <!-- <div id="linkedin-profile-link">
+      linkedin.com/in/vishvajit-kanase-a7625725a
+     </div> -->
+
+
+    </div>
+        
+       
+        
+
+    </div>
+
+    <div class="remain-part">
+      <div class="education">
+        
+        <div id="education-header">
+          EDUCATION
+        </div>
+        
+        <div id="Xth" style="text-transform: capitalize;">
+          SATAVE HIGH-SCHOOL SATAVE
+        </div>
  
-    padding-top: 80px;
-    font-size: 30px;
-    margin-left: 700px;
-}
+         <div id="xiith" style="text-transform: capitalize;">Y C W M WARNA</div>
+        
+         <div id="degree" style="text-transform: capitalize;">COMPUTER SCIENCE AND ENGINEERING
+          <br> WARNANAGAR.
+         </div>
+             
+       <div id="summary" >
+        Lorem, ipsum dolor sit amet consectetur adipisicing eli
+        <br>
+        t. Aliquam porro iste eaque quo in molestiae similiq
+        ue, est repellendus saepe, ipsa ullam il
+        <br>
+        lum reiciendis nemo quae minima rerum, 
+        nam nostrum sit.
+       </div>
+<div id="project-header">
+  PROJECT
+</div>
 
-#print-button{
-background-color: rgb(227, 227, 245);
-height: 100px;
-width: 300px;
-font-size: 20px;
-margin-left: 800px;
-color: black;
-margin-bottom: 100px;
-margin-top: 400px;
-}
-#print-button:hover{
-  border:5px solid black;
-  cursor: pointer;
-  background-color: rgb(48, 55, 244);
-  }
+       <div id="project-name" style="text-transform: capitalize;">
+        Resume Builder <br>
+        www.https//Resume_builder.com
+        
+      </div>
+      
+      <div id="start_date">     </div>
+       </div>
+  
+
+       
+    </div>
+  </div>  
+
+ 
+
+  <div class="bottom_bar2">
+    <div class="horizantal_bar2">
+      For Baground 
+
+
+
+      <button id="reset2" onclick="reset2()">
+        Reset
+     <button>
+
+
+      <button id="red2" onclick="red2()">
+        red
+      </button>
+      
+      <button id="green2" onclick="green2()">
+        green
+      </button>
+      
+      <button id="yellow2" onclick="yellow2()">
+        yellow
+      </button>
+      
+      <button id="pink2" onclick="pink2()">
+        pink
+      </button>
+      
+      <button id="violet2" onclick="violet2()">
+        violet
+      </button>
+      
+    </div>
 
   
+  </div>
+
+
+
+  <div class="bottom_bar">
+    <div class="horizantal_bar">
+      For Horizantal Bar
+
+
+
+      <button id="reset" onclick="reset()">
+        Reset
+     <button>
+
+
+      <button id="red" onclick="red()">
+        red
+      </button>
+      
+      <button id="green" onclick="green()">
+        green
+      </button>
+      
+      <button id="yellow" onclick="yellow()">
+        yellow
+      </button>
+      
+      <button id="pink" onclick="pink()">
+        pink
+      </button>
+      
+      <button id="violet" onclick="violet()">
+        violet
+      </button>
+      
+    </div>
+
+  
+  </div>
+
+
+
+  <div class="bottom_bar1">
+    <div class="horizantal_bar1">
+      For Vertical Bar  
+
+
+      <button id="reset1" onclick="reset1()">
+        Reset
+     <button>
+
+
+      <button id="red1" onclick="red1()">
+        red
+      </button>
+      
+      <button id="green1" onclick="green1()">
+        green
+      </button>
+      
+      <button id="yellow1" onclick="yellow1()">
+        yellow
+      </button>
+      
+      <button id="pink1" onclick="pink1()">
+        pink
+      </button>
+      
+      <button id="violet1" onclick="violet1()">
+        violet
+      </button>
+      
+    </div>
+
+  
+  </div>
+
+
+
+ <button  id="print-button" onclick="window.print()">
+      Print Resumesfd
+    </button>    
+
+       <!-- <button id="colore1" onclick="coloure()">
+            Select
+      </button>
+    </div> -->
+   
+  
+  
+
+    <script src="user_info_resume.js"> 
+      
+    </script>
+</body>
+</html>
+
