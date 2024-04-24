@@ -1,182 +1,96 @@
-/* 
-body{
-    background-image: url("img1.jpeg");
-    background-size:cover;
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Selection</title>
+<link rel="stylesheet" href="template_selection.css">
+</head>
+<body>
+    <div class="header_section">
+
+        <div class="header">Templates we recommend for first resumes
+        </div>
+        <div class="header1">You can always change your template later.
+        </div>
+    </div>
+    <div class="image_part">
+
+        <div class="first_img" >
+            <img src="vishu_project_resume.jpeg">
+            <button  onclick="userform()" id="select-btn1">Select</button>
+        </div>
+         <div class="second_img">
+            <img src="vishu_project_resume.jpeg">
+            <button onclick="userform()" id="select-btn2">Select</button>
+            
+        </div>    </div>
+    <script >
+        
+    //     function userform(){
     
-        transition: opacity 0.5s ease-in-out;
-    
+    //         window.location.href="user_info.html";
+        
+    //    }
+
+       function userform() {
+    document.body.style.opacity = 0;
+    setTimeout(function() {
+        window.location.href = "user_info.html";
+    }, 100);}
+
+
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Selection</title>
+    <link rel="stylesheet" href="template_selection.css">
+</head>
+<body>
+    <div class="header_section">
+        <div class="header">Templates we recommend for first resumes</div>
+        <div class="header1">You can always change your template later.</div>
+    </div>
+    <div class="image_part">
+        <div class="first_img">
+            <img src="vishu_project_resume.jpeg" id="template1" onclick="selectTemplate(1)">
+        </div>
+        <div class="second_img">
+            <img src="vishu_project_resume.jpeg" id="template2" onclick="selectTemplate(2)">
+        </div>
+    </div>
+    <button id="nextBtn" style="font-size: 20px;" onclick="userform()">Next</button>
+    <script>
+        function selectTemplate(templateId) {
+
+            // Reset border for all templates
+            var allImages = document.querySelectorAll('.image_part img');
+            allImages.forEach(image => {
+                image.style.border = 'none';
+            });
+            
+            // here it selects the template according to the templateId passing below
+            var selectedTemplate = document.getElementById('template' + templateId);
+            selectedTemplate.style.border = '20px solid white';
+
+            var nextBtn = document.getElementById('nextBtn');
+            nextBtn.style.display = 'block';
+        }
+
+        function userform() {
+    document.body.style.opacity = 0;
+    setTimeout(function() {
+        window.location.href = "user_info.html";
+    }, 500); // Wait for the transition to complete before redirecting
 }
-
-
-.header{
-    font-size: larger;
-    font-weight: bolder;
-}
-
-
-.header_section{
-    text-align: center;
-    font-size: 40px; 
- margin-top: 70px;
-}
-
-
-
-.image_part{
-    display:inline-flex;
-    margin-top: 5v0px;
-      
-}
-
-.second_img{
-    margin-right: 150px;
-    margin-left: 100px;
-    padding-left: 100px;
-
-}
-
-.first_img{
-    margin-left: 70px;
-padding-left: 100px;
-}
-
-
-img{
-    height: 500px;
-}
-
-#select-btn1{
-    height: 50px;
-    width: 100px;
-    margin-left: 200px;
-    border-radius: 15px;
-  cursor: pointer;
-}
-
-
-#select-btn2{
-    height: 50px;
-    width: 100px;
-    margin-left: 200px;
-    border-radius: 15px;
-  cursor: pointer;
-}
-
-#select-btn1:hover{
-    background-color: rgb(99, 230, 99);
-}
-
-#select-btn2:hover{
-    background-color: rgb(99, 230, 99);
-}
-
-
-
-.first_img:hover{
-    border: 5px solid rgb(191, 253, 91);
-}
-
-
-.second_img:hover{
-border: 5px solid rgb(191, 253, 91);
-    } 
-     */
-
-
-     body{
-        background-image: url("img1.jpeg");
-        background-size:cover;
-    }
-    
-    
-    .header{
-        font-size: larger;
-        font-weight: bolder;
-    }
-    
-    
-    .header_section{
-        text-align: center;
-        font-size: 40px; 
-     margin-top: 70px;
-    }
-    
-    
-    
-    .image_part{
-        display:inline-flex;
-        margin-top: 30px;
-          margin-left: 130px;
-    } 
-    
-    .second_img{
-        margin-right: 150px;
-        margin-left: 100px;
-        padding-left: 100px;
-    
-    }
-    
-    .first_img{
-        margin-left: 70px;
-    padding-left: 100px;
-    }
-    
-    
-    img{
-        height: 500px;
-    }
-    
-    #select-btn1{
-        height: 50px;
-        width: 100px;
-        margin-left: 200px;
-        border-radius: 15px;
-      cursor: pointer;
-    }
-    
-    
-    #select-btn2{
-        height: 50px;
-        width: 100px;
-        margin-left: 200px;
-        border-radius: 15px;
-      cursor: pointer;
-    }
-    
-    #select-btn1:hover{
-        background-color: rgb(99, 230, 99);
-    }
-    
-    #select-btn2:hover{
-        background-color: rgb(99, 230, 99);
-    }
-    
-    
-    /* 
-    .first_img:hover{
-        border: 5px solid rgb(191, 253, 91);
-    }
-    
-    
-    .second_img:hover{
-    border: 5px solid rgb(191, 253, 91);
-        }  */
-    body {
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    #nextbtn{
-        margin-left: 700px;
-        margin-top: 80px;
-        height: 70px;
-        width:200px;
-        border-radius: 10px;
-        background-color: rgb(89, 226, 89);
-       
-    }
-    #nextbtn:hover{
-        background-color: blue;
-    cursor: pointer;
-        border: 5px solid green;
-    
-    }
+    </script>
+</body>
+</html>
