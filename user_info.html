@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User details</title>
+    <link rel="stylesheet" href="user_info.css">
+
+</head>
+
+<body>
+    
+    <h1 id="resume-builder-header">
+        RESUME BUILDER
+    </h1>
+
+    <div id="about_msg">ABOUT SECTION</div>
+    
+    <form class="cv-form">
+
+        <div class="about_section">
+            
+            
+            <div class="about_section1">
+              
+                <div  name="firstname" id ="" >First Name
+                    <input id="first_name" placeholder="" type="text">       
+                </div>
+                
+                <div >
+                    Middel name
+                <input id="middel_name" type="text" placeholder="">       
+            </div>
+            
+            <div >
+                Last Name
+                <input id="last_name" type="text" placeholder="">       
+            </div> 
+            
+            
+        </div>
+          
+            
+            <div class="about_section2">
+              
+                <div >Email id
+                    <input id="email" placeholder="" type="text">       
+                </div>
+            
+               <div >
+                  phone_no
+                <input id="phone_no" type="number" >       
+            </div>
+            
+                <div >
+                    Address
+                    <input id="address" type="text" >       
+                </div> 
+                
+                
+            </div>
+            
+
+            <div class="about_section2">
+                
+                <div >your photo
+                    <!-- <input   type="file"  onchange="replaceImage(event)">    -->
+                    <!-- <input   type="file" >    -->
+                    <input  id="photo" type="file"  onchange="replaceImage(event)">   
+
+                </div>
+            
+               <div >
+                  Designation
+                <input  id="Designation" type="text" placeholder="">       
+               </div>
+<!--             
+                <div >
+                    DBO
+                     <input id="date_of_birth" type="date"  placeholder="Date of birth">       
+                   
+                
+                 </div> -->
+                 
+            
+                 <div class="description">
+                SUMMARY
+                <textarea id="summary" type="text" placeholder="small intro"></textarea>
+            </div> 
+            
+        </div>
+           <div id="Gender" >
+               Gender(M/F)
+               <input type="text" id="gender">
+            </input>
+
+        </div>
+        </div>
+        
+        
+        <div id="about_msg">
+            SKILL
+            
+        </div>
+        
+        <div class="skill">
+    <div>
+      <p id="skill-text">ENTER THE SKIL</p>
+       <ul>
+           <p id="skill-text">
+               1]<input  id="skill-1" >
+               2]<input  id="skill-2" >
+            </p>
+            
+            <p id="skill-text">
+                3]<input id="skill-3">
+                4]<input  id="skill-4" >
+            </p>
+
+
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+        
+        <div id="achivement-header">ACHIVEMENT</div>
+        
+        <div class="achivement">
+            
+            <div class="titel">
+                Title
+                <input id="achivement-titel" type="text" placeholder="eg. gold_medelist">
+                
+            </div>
+            
+            
+            <div class="description">
+                Description
+                <textarea id="achivement-description" type="text" placeholder="write description"></textarea>
+            </div>
+            
+            
+            
+            
+        </div>
+
+        
+<div class="education-header">
+    EDUCATION
+</div>
+
+  <div class="education-section">
+         <div class="education-row1">
+
+            <div class="school">10TH
+                <input type="text" id="education-school">
+                MARKS
+                <input type="text" id="education-school-marks">
+                
+            </div>
+            
+            
+            <div class="school">12TH
+                <input type="text" id="education-collage">
+                MARKS
+                <input type="text" id="education-collage-marks">
+      </div>
+
+
+          <div class="school">
+            DEGREE
+            <input type="text" id="education-degree">
+            MARKS
+            <input type="text" id="education-degree-marks">
+          </div>
+    
+          <!-- <div class="city">
+          CITY
+            <input type="text" id="education-city">
+          </div>
+    
+           -->
+    
+        </div>
+  
+
+        </div>
+    <!-- </div> -->
+
+    
+
+<div class="project-header">PROJECT</div>
+
+
+<div class="project-container">
+ 
+    
+  <!-- <div class="education-section"> -->
+    <div class="project1">
+
+                <div>PROJECT NAME
+                    <input type="text" id="project-name">
+            </div>
+
+                    <div>
+                  PROJECT LINK
+                <input type="text" id="project-link">
+             </div>
+
+                <div >
+                   DESCRIPTION
+                    <input type="text" id="project-description">
+                </div>
+
+     
+        </div>
+
+    </div>
+
+<!-- <div class="education-row2"> -->
+     <div class="project2">
+            
+        <div style="height: 50px; width: 50px;">Duration(Weeks)
+        <input type="number" id="duration" style="height: 50px; width: 200px;font-size: 50px;">
+
+    </div>
+<!-- 
+        <div>END DATE
+            <input type="date" id="end-date-project">
+         </div> -->
+
+    </div>
+
+
+</div>
+</form>
+
+
+<div class="create-cv">
+    <!-- <button id="creat-cv1" onclick="window.location.href='user_info_resume.html'">creat cv</button> -->
+    <!-- <button id="creat-cv1" onclick="'saveInput()'">creat cv</button> -->
+<button onclick="saveInput()" id="creat-cv1">Creat CV</button>
+
+ </div>
+
+
+    <script src="user_info.js"></script>
+</body>
+</html>
