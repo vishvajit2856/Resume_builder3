@@ -61,10 +61,129 @@ let time=localStorage.getItem("duration1");
 document.getElementById("project-name").innerText=projectname+"\n"+projectlink+"\n "+projectdescription+"\n "+ time+"   Weeks";
 
 
-function coloure(){
+// function coloure(){
+//   let block=  document.querySelector(".main-board");
+//  block.style.backgroundColor ="black";
+
+
+// }
+function red2(){
+  let block=  document.querySelector(".resume-form");
+  let block1=  document.querySelector(".education");
+ block.style.backgroundColor ="red";
+ block1.style.backgroundColor ="red";
+}
+
+function green2(){
+  let block=  document.querySelector(".resume-form");
+  let block1=  document.querySelector(".education");
+ block.style.backgroundColor ="green";
+ block1.style.backgroundColor ="green";
+}
+
+
+function reset2(){
+  let block=  document.querySelector(".resume-form");
+  let block1=  document.querySelector(".education");
+ block.style.backgroundColor ="white";
+ block1.style.backgroundColor ="white";
+}
+
+
+function yellow2(){
+  let block=  document.querySelector(".resume-form");
+  let block1=  document.querySelector(".education");
+ block.style.backgroundColor ="yellow";
+ block1.style.backgroundColor ="yellow";
+}
+
+
+
+function pink2(){
+  let block=  document.querySelector(".resume-form");
+  let block1=  document.querySelector(".education");
+ block.style.backgroundColor ="pink";
+ block1.style.backgroundColor ="pink";
+}
+
+
+function violet2(){
+  let block=  document.querySelector(".resume-form");
+  let block1=  document.querySelector(".education");
+ block.style.backgroundColor ="violet";
+ block1.style.backgroundColor ="violet";
+}
+
+
+
+function red1(){
+  let block=  document.querySelector(".skill-class");
+ block.style.backgroundColor ="red";
+}
+
+
+function green1(){
+  let block=  document.querySelector(".skill-class");
+ block.style.backgroundColor ="green";
+}
+
+
+function reset1(){
+  let block=  document.querySelector(".skill-class");
+ block.style.backgroundColor ="rgb(194, 250, 241)";
+}
+
+function yellow1(){
+  let block=  document.querySelector(".skill-class");
+ block.style.backgroundColor ="yellow";
+}
+
+function pink1(){
+  let block=  document.querySelector(".skill-class");
+ block.style.backgroundColor ="pink";
+}
+
+function violet1(){
+  let block=  document.querySelector(".skill-class");
+ block.style.backgroundColor ="violet";
+}
+
+
+
+
+
+function red(){
   let block=  document.querySelector(".main-board");
- block.style.backgroundColor ="black";
+ block.style.backgroundColor ="red";
+}
 
 
+function reset(){
+  let block=  document.querySelector(".main-board");
+ block.style.backgroundColor ="rgb(194, 250, 241)";
+}
+
+
+function green(){
+  let block=  document.querySelector(".main-board");
+ block.style.backgroundColor ="green";
+}
+
+
+function yellow(){
+  let block=  document.querySelector(".main-board");
+ block.style.backgroundColor ="yellow";
+}
+
+
+function pink(){
+  let block=  document.querySelector(".main-board");
+ block.style.backgroundColor ="pink";
+}
+
+
+function violet(){
+  let block=  document.querySelector(".main-board");
+ block.style.backgroundColor ="violet";
 }
 
